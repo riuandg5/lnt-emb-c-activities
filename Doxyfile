@@ -1,0 +1,13 @@
+# Doxyfile 1.8.17
+PROJECT_NAME           = "LnT Embedded C Activities"
+INPUT                  = src inc README.md
+IMAGE_PATH             = images
+RECURSIVE              = YES
+USE_MDFILE_AS_MAINPAGE = README.md
+OUTPUT_DIRECTORY       = docs
+HTML_OUTPUT            = .
+HAVE_DOT               = NO
+GENERATE_LATEX         = NO
+OPTIMIZE_OUTPUT_FOR_C  = YES
+CASE_SENSE_NAMES       = NO
+HIDE_SCOPE_NAMES       = YES
