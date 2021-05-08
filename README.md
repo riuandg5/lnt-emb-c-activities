@@ -1,5 +1,7 @@
 # lnt-emb-c-activities
 
+[![BUILD](https://github.com/riuandg5/lnt-emb-c-activities/actions/workflows/build.yml/badge.svg)](https://github.com/riuandg5/lnt-emb-c-activities/actions/workflows/build.yml)
+[![CODE ANALYSIS](https://github.com/riuandg5/lnt-emb-c-activities/actions/workflows/code-analysis.yml/badge.svg)](https://github.com/riuandg5/lnt-emb-c-activities/actions/workflows/code-analysis.yml)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/6f8a0d749ffa446881a510edcef9d951)](https://app.codacy.com/gh/riuandg5/lnt-emb-c-activities?utm_source=github.com&utm_medium=referral&utm_content=riuandg5/lnt-emb-c-activities&utm_campaign=Badge_Grade_Settings)
 
 This project is part of LnT STEPin program. The objective is to learn Embedded C programming.
