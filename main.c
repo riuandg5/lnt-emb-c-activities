@@ -22,16 +22,9 @@ void loop()
 {
     while (1)
     {
-        if (BUTTON_SENSOR_ON)
+        if (BUTTON_SENSOR_ON && HEATER_ON)
         {
-            if (HEATER_ON)
-            {
-                set_led(ON);
-            }
-            else
-            {
-                set_led(OFF);
-            }
+            set_led(ON);
         }
         else
         {
