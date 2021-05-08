@@ -1,0 +1,17 @@
+name: BUILD
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  LINUX:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: install avr-gcc
+      run: sudo apt install gcc-avr binutils-avr avr-libc
+    - name: make build
+      run: make build
