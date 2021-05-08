@@ -2,7 +2,7 @@
 PROJECT_NAME := main
 
 # Variable to store name of the project doxyfile
-PROJECT_DOXYFILE = Doxyfile
+PROJECT_DOXYFILE := Doxyfile
 # Variable to store name of documentation folder
 DOCS_DIR := docs
 
@@ -25,7 +25,7 @@ CC := avr-gcc
 # Variable to store name of default object translator
 OBJCOPY := avr-objcopy
 # Variable to store name of MCU
-MCU = atmega328
+MCU := atmega328
 # Variable to store include flags by prefixing -I to include folders
 INC_FLAGS := $(addprefix -I,$(INC_DIRS))
 # Vriable to store C preprocessor settings
