@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['ddr_6',['DDR',['../utility_8h.html#ab30fe70e91726e65a45b06c43f1e0835',1,'utility.h']]],
-  ['ddr_5f_7',['DDR_',['../utility_8h.html#a126a6e859538d114ae13ab500da109ff',1,'utility.h']]],
-  ['ddr_5f_5f_8',['DDR__',['../utility_8h.html#a2eb4a78a1ba5743b66499bc33c47dd8e',1,'utility.h']]]
+  ['get_5fbit_5fstate_10',['get_bit_state',['../utility_8h.html#a9202af53f559d834ad69a74b285c6a1d',1,'utility.c']]]
 ];

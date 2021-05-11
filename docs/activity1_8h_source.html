@@ -73,24 +73,27 @@ $(function() {
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef __ACTIVITY1_H__</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define __ACTIVITY1_H__</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="activity1_8h.html#a242cc70f67d2a4caee37bea7bb5e4007">   14</a></span>&#160;<span class="preprocessor">#define HEATER                   </span></div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="activity1_8h.html#a1db33a00438416c3840fc776dada6448">   15</a></span>&#160;<span class="preprocessor">#define HEATER_PORT D            </span></div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="activity1_8h.html#a1a4cece415ae7d43099dae4ff8b8a31c">   16</a></span>&#160;<span class="preprocessor">#define HEATER_PIN 0             </span></div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="activity1_8h.html#add6ca5edc6baca7a46a3e6604f4a7e20">   17</a></span>&#160;<span class="preprocessor">#define HEATER_ON !(PIN(HEATER)) </span></div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="activity1_8h.html#ad7a9e7118a623ac8348f4bed1bd29255">   19</a></span>&#160;<span class="preprocessor">#define BUTTON_SENSOR                          </span></div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="activity1_8h.html#abb5731f8f318d15340d1bac828120006">   20</a></span>&#160;<span class="preprocessor">#define BUTTON_SENSOR_PORT D                   </span></div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="activity1_8h.html#a6da76e732c9778134c0409da40331fb0">   21</a></span>&#160;<span class="preprocessor">#define BUTTON_SENSOR_PIN 1                    </span></div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="activity1_8h.html#aa66caa7dc38e056b39ea349712cd3187">   22</a></span>&#160;<span class="preprocessor">#define BUTTON_SENSOR_ON !(PIN(BUTTON_SENSOR)) </span></div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="activity1_8h.html#aeb7a7ba1ab7e0406f1b5ab36d579f585">   24</a></span>&#160;<span class="preprocessor">#define LED        </span></div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="activity1_8h.html#a663daa01e565aee93c6f20c5845b90b4">   25</a></span>&#160;<span class="preprocessor">#define LED_PORT B </span></div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="activity1_8h.html#ab4553be4db9860d940f81d7447173b2f">   26</a></span>&#160;<span class="preprocessor">#define LED_PIN 0  </span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">void init_led();</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">void</span> <a class="code" href="activity1_8h.html#a4bc11f33f1e2092a38b570214da782f4">set_led</a>(<span class="keywordtype">int</span> state);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif </span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="activity1_8h.html#ad76944efb66b56617e4399ad04b885ec">   14</a></span>&#160;<span class="preprocessor">#define HEATER_SWITCH_DDRx DDRD   </span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="activity1_8h.html#addbc1b3d5ea6cc20fe6dc9ceae47c3cf">   15</a></span>&#160;<span class="preprocessor">#define HEATER_SWITCH_PORTx PORTD </span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="activity1_8h.html#a5a9f5048e462911f855ddc392b717723">   16</a></span>&#160;<span class="preprocessor">#define HEATER_SWITCH_PINx PIND   </span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="activity1_8h.html#a1af181964f33dc4d3d5c053739cfce9d">   17</a></span>&#160;<span class="preprocessor">#define HEATER_SWITCH_BIT 0       </span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="activity1_8h.html#a9d46bf3a52942bef1925fa68cf525221">   19</a></span>&#160;<span class="preprocessor">#define BUTTON_SENSOR_DDRx DDRD   </span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="activity1_8h.html#a623e0c927d5f521fa5788ebc56b83ac5">   20</a></span>&#160;<span class="preprocessor">#define BUTTON_SENSOR_PORTx PORTD </span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="activity1_8h.html#a60b3c23cbdcbf59b61c2f12a995ea0d5">   21</a></span>&#160;<span class="preprocessor">#define BUTTON_SENSOR_PINx PIND   </span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="activity1_8h.html#af3b1d39de366391408994132c36feb90">   22</a></span>&#160;<span class="preprocessor">#define BUTTON_SENSOR_BIT 1       </span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="activity1_8h.html#a946733e0ca46e9dcd43e9c9ead6fdc28">   24</a></span>&#160;<span class="preprocessor">#define DASHBOARD_LED_DDRx DDRB   </span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="activity1_8h.html#a883a141fe30907d187fb5b9fc0bdbdce">   25</a></span>&#160;<span class="preprocessor">#define DASHBOARD_LED_PORTx PORTB </span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="activity1_8h.html#a90864253c2ae7fac2fdf172c500f6b1f">   26</a></span>&#160;<span class="preprocessor">#define DASHBOARD_LED_PINx PINB   </span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="activity1_8h.html#a45456a97571813ce5f2067163a737c15">   27</a></span>&#160;<span class="preprocessor">#define DASHBOARD_LED_BIT 0       </span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="activity1_8h.html#a1eaac033efec4ad092f2c0ed57ad2ada">   29</a></span>&#160;<span class="preprocessor">#define HEATER_SWITCH_ON !get_bit_state(&amp;HEATER_SWITCH_PINx, HEATER_SWITCH_BIT) </span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="activity1_8h.html#aa66caa7dc38e056b39ea349712cd3187">   30</a></span>&#160;<span class="preprocessor">#define BUTTON_SENSOR_ON !get_bit_state(&amp;BUTTON_SENSOR_PINx, BUTTON_SENSOR_BIT) </span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">void init_activity_1();</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">void</span> <a class="code" href="activity1_8h.html#a34f5034ae65747af5e2d131254bf79df">set_dashboard_led</a>(<span class="keywordtype">int</span> state);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif </span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aactivity1_8h_html_a4bc11f33f1e2092a38b570214da782f4"><div class="ttname"><a href="activity1_8h.html#a4bc11f33f1e2092a38b570214da782f4">set_led</a></div><div class="ttdeci">void set_led(int state)</div><div class="ttdoc">Set LED state.</div><div class="ttdef"><b>Definition:</b> activity1.c:17</div></div>
+<div class="ttc" id="aactivity1_8h_html_a34f5034ae65747af5e2d131254bf79df"><div class="ttname"><a href="activity1_8h.html#a34f5034ae65747af5e2d131254bf79df">set_dashboard_led</a></div><div class="ttdeci">void set_dashboard_led(int state)</div><div class="ttdoc">Set the state of Dashboard LED.</div><div class="ttdef"><b>Definition:</b> activity1.c:16</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

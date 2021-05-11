@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['ddr_41',['DDR',['../utility_8h.html#ab30fe70e91726e65a45b06c43f1e0835',1,'utility.h']]],
-  ['ddr_5f_42',['DDR_',['../utility_8h.html#a126a6e859538d114ae13ab500da109ff',1,'utility.h']]],
-  ['ddr_5f_5f_43',['DDR__',['../utility_8h.html#a2eb4a78a1ba5743b66499bc33c47dd8e',1,'utility.h']]]
+  ['heater_5fswitch_5fbit_38',['HEATER_SWITCH_BIT',['../activity1_8h.html#a1af181964f33dc4d3d5c053739cfce9d',1,'activity1.h']]],
+  ['heater_5fswitch_5fddrx_39',['HEATER_SWITCH_DDRx',['../activity1_8h.html#ad76944efb66b56617e4399ad04b885ec',1,'activity1.h']]],
+  ['heater_5fswitch_5fon_40',['HEATER_SWITCH_ON',['../activity1_8h.html#a1eaac033efec4ad092f2c0ed57ad2ada',1,'activity1.h']]],
+  ['heater_5fswitch_5fpinx_41',['HEATER_SWITCH_PINx',['../activity1_8h.html#a5a9f5048e462911f855ddc392b717723',1,'activity1.h']]],
+  ['heater_5fswitch_5fportx_42',['HEATER_SWITCH_PORTx',['../activity1_8h.html#addbc1b3d5ea6cc20fe6dc9ceae47c3cf',1,'activity1.h']]]
 ];

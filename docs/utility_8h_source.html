@@ -75,27 +75,13 @@ $(function() {
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="utility_8h.html#ad76d1750a6cdeebd506bfcd6752554d2">   14</a></span>&#160;<span class="preprocessor">#define ON 1  </span></div>
 <div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="utility_8h.html#a29e413f6725b2ba32d165ffaa35b01e5">   15</a></span>&#160;<span class="preprocessor">#define OFF 0 </span></div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="utility_8h.html#a056abf70518ca02aace3cd19a1dcd41f">   17</a></span>&#160;<span class="preprocessor">#define SET_BIT |=    </span></div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="utility_8h.html#ae64efb6920fc5857332056ba0e23988a">   18</a></span>&#160;<span class="preprocessor">#define CLEAR_BIT &amp;= ~</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="utility_8h.html#a4fd877e65910709d8121e36263efb7d3">   19</a></span>&#160;<span class="preprocessor">#define TOGGLE_BIT ^= </span></div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="utility_8h.html#a61a3c9a18380aafb6e430e79bf596557">   21</a></span>&#160;<span class="preprocessor">#define OUTPUT SET_BIT  </span></div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="utility_8h.html#a1bb283bd7893b9855e2f23013891fc82">   22</a></span>&#160;<span class="preprocessor">#define INPUT CLEAR_BIT </span></div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="utility_8h.html#a2eb4a78a1ba5743b66499bc33c47dd8e">   24</a></span>&#160;<span class="preprocessor">#define DDR__(port) DDR##port  </span></div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="utility_8h.html#a126a6e859538d114ae13ab500da109ff">   25</a></span>&#160;<span class="preprocessor">#define DDR_(port) DDR__(port) </span></div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="utility_8h.html#ab30fe70e91726e65a45b06c43f1e0835">   26</a></span>&#160;<span class="preprocessor">#define DDR(device, direction) \</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">    DDR_(device##_PORT)        \</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">    direction(1 &lt;&lt; device##_PIN) </span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define PORT__(port) PORT##port  </span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#define PORT_(port) PORT__(port) </span></div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="utility_8h.html#ac8b8014842c35d031c640d617690a9d0">   32</a></span>&#160;<span class="preprocessor">#define PORT(device, operation) \</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="utility_8h.html#a95f2182f1422bd239747cf1f35b07490">   33</a></span>&#160;<span class="preprocessor">    PORT_(device##_PORT)        \</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="utility_8h.html#af71a85f56a8512dbe7a14bd8b630e536">   34</a></span>&#160;<span class="preprocessor">    operation(1 &lt;&lt; device##_PIN) </span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#define PIN__(port) PIN##port  </span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#define PIN_(port) PIN__(port) </span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#define PIN(device) \</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">    PIN_(device##_PORT) &amp; (1 &lt;&lt; device##_PIN) </span></div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="utility_8h.html#aaea2094f580b6538db6a69f7df4e6fb2">   41</a></span>&#160;<span class="preprocessor">#endif </span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">void set_bit_state(volatile uint8_t *reg, int bit, int state);</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keywordtype">int</span> <a class="code" href="utility_8h.html#a9202af53f559d834ad69a74b285c6a1d">get_bit_state</a>(<span class="keyword">volatile</span> uint8_t *reg, <span class="keywordtype">int</span> bit);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif </span></div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="autility_8h_html_a9202af53f559d834ad69a74b285c6a1d"><div class="ttname"><a href="utility_8h.html#a9202af53f559d834ad69a74b285c6a1d">get_bit_state</a></div><div class="ttdeci">int get_bit_state(volatile uint8_t *reg, int bit)</div><div class="ttdoc">Get the bit state in a register.</div><div class="ttdef"><b>Definition:</b> utility.c:19</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
