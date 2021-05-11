@@ -15,20 +15,20 @@ int main()
 
 void setup()
 {
-    init_led();
+    init_activity_1();
 }
 
 void loop()
 {
     while (1)
     {
-        if (BUTTON_SENSOR_ON && HEATER_ON)
+        if (BUTTON_SENSOR_ON && HEATER_SWITCH_ON)
         {
-            set_led(ON);
+            set_dashboard_led(ON);
         }
         else
         {
-            set_led(OFF);
+            set_dashboard_led(OFF);
         }
     }
 }
