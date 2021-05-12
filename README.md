@@ -13,11 +13,22 @@ Objective is to make a Car Seat Heater. The whole project is divided into four d
 ![overview](images/overview.png)
 
 ## Activity 1
-* Show status of the heater using an LED on the car dashboard.
-* Heater can be toggled ON or OFF using a Push Button only if the seat is occupied.
-* Occupancy of the seat is evaluated by the state of a switch.
+* Show status of the heater (ON or OFF) using an LED on the car dashboard.
+* Heater can be turned ON or OFF using a switch only if the seat is occupied.
+* Occupancy of the seat is known by a sensor.
+
 
 ### In Action
+* `DASHBOARD_LED`
+    * Show heater status.
+    * Connected to `B0`.
+* `HEATER_SWITCH`
+    * Switch to turn heater ON or OFF.
+    * Connected to `D0`.
+* `BUTTON_SENSOR`
+    * Sensor (emulated as switch) to sense seat occupancy.
+    * Connected to `D1`.
+
 | Case 00                            | Case 01                            |
 |------------------------------------|------------------------------------|
 | ![case 00](images/activity1_1.png) | ![case 01](images/activity1_2.png) |

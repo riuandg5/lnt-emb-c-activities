@@ -77,12 +77,29 @@ overview</div></div>
    <h2><a class="anchor" id="autotoc_md2"></a>
 Activity 1</h2>
 <ul>
-<li>Show status of the heater using an LED on the car dashboard.</li>
-<li>Heater can be toggled ON or OFF using a Push Button only if the seat is occupied.</li>
-<li>Occupancy of the seat is evaluated by the state of a switch.</li>
+<li>Show status of the heater (ON or OFF) using an LED on the car dashboard.</li>
+<li>Heater can be turned ON or OFF using a switch only if the seat is occupied.</li>
+<li>Occupancy of the seat is known by a sensor.</li>
 </ul>
 <h3><a class="anchor" id="autotoc_md3"></a>
 In Action</h3>
+<ul>
+<li><code>DASHBOARD_LED</code><ul>
+<li>Show heater status.</li>
+<li>Connected to <code>B0</code>.</li>
+</ul>
+</li>
+<li><code>HEATER_SWITCH</code><ul>
+<li>Switch to turn heater ON or OFF.</li>
+<li>Connected to <code>D0</code>.</li>
+</ul>
+</li>
+<li><code>BUTTON_SENSOR</code><ul>
+<li>Sensor (emulated as switch) to sense seat occupancy.</li>
+<li>Connected to <code>D1</code>.</li>
+</ul>
+</li>
+</ul>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Case 00 </th><th class="markdownTableHeadNone">Case 01  </th></tr>
