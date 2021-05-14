@@ -17,7 +17,6 @@ Objective is to make a Car Seat Heater. The whole project is divided into four d
 * Heater can be turned ON or OFF using a switch only if the seat is occupied.
 * Occupancy of the seat is known by a sensor.
 
-
 ### In Action
 * `DASHBOARD_LED`
     * Show heater status.
@@ -36,3 +35,6 @@ Objective is to make a Car Seat Heater. The whole project is divided into four d
 | Case 10                            | Case 11                            |
 |------------------------------------|------------------------------------|
 | ![case 10](images/activity1_3.png) | ![case 11](images/activity1_4.png) |
+
+## Activity 2
+* Read temperature from a temperature sensor (analog).
