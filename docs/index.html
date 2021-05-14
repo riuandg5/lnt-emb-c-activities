@@ -128,6 +128,43 @@ case 10</div></div>
 case 11</div></div>
       </td></tr>
 </table>
+<h2><a class="anchor" id="autotoc_md4"></a>
+Activity 2</h2>
+<ul>
+<li>Read temperature from a temperature sensor (analog).</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md5"></a>
+In Action</h3>
+<ul>
+<li><code>TEMPERATURE_SENSOR</code><ul>
+<li>Sensor (emulated as potentiometer) to sense temperature.</li>
+<li>Give analog signal (voltage from 0V to 5V) for sensed temperature.</li>
+<li>Connected to <code>C0</code>.</li>
+</ul>
+</li>
+</ul>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Test 0 </th><th class="markdownTableHeadNone">Output </th><th class="markdownTableHeadNone">Expected Output  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><div class="image">
+<img src="activity2_1.png" alt=""/>
+<div class="caption">
+test 0</div></div>
+     </td><td class="markdownTableBodyNone">(0000000000) 0V </td><td class="markdownTableBodyNone">0V  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><div class="image">
+<img src="activity2_2.png" alt=""/>
+<div class="caption">
+test 0</div></div>
+     </td><td class="markdownTableBodyNone">(0111111111) 2.495V </td><td class="markdownTableBodyNone">2.5V  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><div class="image">
+<img src="activity2_3.png" alt=""/>
+<div class="caption">
+test 0</div></div>
+     </td><td class="markdownTableBodyNone">(1111111110) 4.990V </td><td class="markdownTableBodyNone">5V  </td></tr>
+</table>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->
