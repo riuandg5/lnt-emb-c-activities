@@ -38,3 +38,15 @@ Objective is to make a Car Seat Heater. The whole project is divided into four d
 
 ## Activity 2
 * Read temperature from a temperature sensor (analog).
+
+### In Action
+* `TEMPERATURE_SENSOR`
+    * Sensor (emulated as potentiometer) to sense temperature.
+    * Give analog signal (voltage from 0V to 5V) for sensed temperature.
+    * Connected to `C0`.
+
+| Test Case                         | Output              | Expected Output |
+|-----------------------------------|---------------------|-----------------|
+| ![test 0](images/activity2_1.png) | (0000000000) 0V     | 0V              |
+| ![test 0](images/activity2_2.png) | (0111111111) 2.495V | 2.5V            |
+| ![test 0](images/activity2_3.png) | (1111111110) 4.990V | 5V              |
