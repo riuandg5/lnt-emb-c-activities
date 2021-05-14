@@ -1,6 +1,9 @@
 #include <avr/io.h>
 #include "utility.h"
 #include "activity1.h"
+#include "activity2.h"
+
+uint16_t temperature;
 
 void setup();
 void loop();
@@ -16,6 +19,7 @@ int main()
 void setup()
 {
     init_activity_1();
+    init_activity_2();
 }
 
 void loop()
@@ -25,6 +29,7 @@ void loop()
         if (BUTTON_SENSOR_ON && HEATER_SWITCH_ON)
         {
             set_dashboard_led(ON);
+            temperature = read_temperature_sensor();
         }
         else
         {
